@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    font-weight: 400;
+    color: #1ac056;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+p {
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.main-container {
+    background-color: #f9fcfe;
+    padding-bottom: 40px;
+}
+
+p1 {
+    padding: 10px 20px;
+    font-weight: 100;
+}
+
+/* nav */
+
+#main-nav {
+    transition: all 0.4s;
+
+}
+
+#main-nav a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 15px;
+}
+
+#main-nav a:hover {
+    color: #1ac056;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0;
+}
+
+#main-nav.scrolled > button > i {
+    color: #1ac056;
+}
+
+#main-nav.scrolled a {
+    color: #1ac056;
+}
+
+#main-nav.scrolled a:hover {
+    background-color: white;
+}
+
+#hamburger {
+    border: solid 1px transparent;
+    margin: 10px;
+}
+
+#hamburger:focus {
+    outline: solid 1px transparent;
+}
+
+#hamburger:hover {
+    background-color: white;
+}
+
+#hamburger-icon {
+    color: white;
+    font-size: 35px;
+}
+
+
+
+/* header */
+
+#header-container {
+    height: 100vh;
+    background: url('../img/header-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-name{
+    font-size: 100px;
+    font-weight: 300;
+}
+
+.flex-container > figure {
+    padding: 0 15%;
+}
+
+.flex-container > figure >img {
+    width: 100%;
+}
+
+.container-header {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+.skills-container {
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+
+/*portfolio*/
+
+#portfolio {
+    text-align: center;
+}
+
+#portfolio .background {
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#portfolio-item-1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#portfolio-item-2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#portfolio-item-3 {
+    background-image: url('../img/portfolio3.jpg');
+}
+
+#portfolio .mask {
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(33, 59, 80, 0.7);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#portfolio .mask:hover {
+    opacity: 1;
+}
+
+#portfolio .border {
+    height: 100%;
+    border: 1px solid #fff;
+}
+
+#portfolio .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    height: 100%;
+}
+
+.background {
+    padding: 0;
+}
+
+/* contact */
+#contact {
+    background-color: #213b50;
+    color: #fff;
+}
+
+#contact address a {
+    color: #1ac056;
+}
+
+.social-icons {
+    margin: 20px 0;
+    
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.4s;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: #213b50;
+    background-color: #fff;
+}
+
+.contact-inner input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2b4b65;
+    border: 0;
+}
+
+.contact-inner input[type="submit"] {
+    float: right;
+    padding: 10px;
+    background-color: #1ac056;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    transition: 0.4s;
+}
+
+.contact-inner input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #2b4b65;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#main-nav label,
+#main-nav input {
+    display: none;
+}
+
+.contact-container {
+    padding-top: 50px;
+}
+
+#footer {
+    background-color: #142a3b;
+    color: white;
+}
+#copyright > p {
+    padding: 5px 0;;
+    margin: 0;
+}
+
+/*zmiana koloru placeholdera*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+    opacity: 0.6;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    opacity: 0.6;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+    opacity: 0.6;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+    opacity: 0.6;
+}
